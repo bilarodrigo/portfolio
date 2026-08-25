@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rodrigo Santos Carneiro — Engenheiro Eletrônico e Full-Stack especialista em sistemas embarcados, IoT, firmware e cloud. 20+ anos de experiência.">
+    <title>Rodrigo Carneiro — Engenharia Embarcada & IoT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Menu -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-text">RODRIGO<span class="accent">CARNEIRO</span></span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero / Banner -->
+    <section class="hero" id="inicio">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="--bg: linear-gradient(135deg, #151414 0%, #2a1f00 100%);">
+                <div class="container hero-content">
+                    <span class="hero-tag">ENGENHARIA EMBARCADA & IoT</span>
+                    <h1 class="hero-title">Da Placa à <span class="accent">Nuvem</span></h1>
+                    <p class="hero-subtitle">Hardware, firmware e full-stack integrados em uma única solução dashboards em tempo real</p>
+                    <a href="#portfolio" class="btn btn-primary">VER PROJETOS</a>
+                </div>
+            </div>
+            <div class="hero-slide" style="--bg: linear-gradient(135deg, #151414 0%, #1a1a2e 100%);">
+                <div class="container hero-content">
+                    <span class="hero-tag">EXPERIÊNCIA</span>
+                    <h1 class="hero-title">20+ Anos de <span class="accent">Eletrônica</span></h1>
+                    <p class="hero-subtitle">Laboratório, projetos CAD, soldas PTH/SMD, simulações — do protótipo ao produto</p>
+                    <a href="#sobre" class="btn btn-primary">SAIBA MAIS</a>
+                </div>
+            </div>
+            <div class="hero-slide" style="--bg: linear-gradient(135deg, #151414 0%, #2d1b00 100%);">
+                <div class="container hero-content">
+                    <span class="hero-tag">TELEMETRIA</span>
+                    <h1 class="hero-title">Código que <span class="accent">Conecta</span></h1>
+                    <p class="hero-subtitle">Telemetria, rastreamento, geolocalização, Edge AI e criptografia ponta a ponta</p>
+                    <a href="#contato" class="btn btn-primary">ENTRE EM CONTATO</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="section sobre" id="sobre">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">QUEM SOU EU</span>
+                <h2 class="section-title">Sobre <span class="accent">Mim</span></h2>
+            </div>
+            <div class="sobre-grid">
+                <div class="sobre-text">
+                    <p>Olá! Sou <strong>Rodrigo Santos Carneiro</strong>, desenvolvedor de hardware, firmware e software com mais de 20 anos de experiência eletrônica e informática. Atuo do silício à cloud — projetando placas (PCB), programando firmware e conectando tudo à nuvem.</p>
+                    <p>Minha base é <strong>IoT</strong>. Trabalho com instrumentação, simulação e programação de microcontroladores <strong>Microchip (PIC), Microchip AVR, Espressif ESP, STMicroelectronics STM/ARM, NXP</strong>.</p>
+                    <p>Atualmente foco em <strong>IoT de produção</strong>: telemetria, rastreamento, 4G e plataformas em tempo real com criptografia ponta a ponta.</p>
+                </div>
+                <div class="sobre-cards">
+                    <div class="sobre-card">
+                        <h3 class="card-icon"></h3>
+                        <h4>Missão</h4>
+                        <p>Entregar sistemas embarcados que resolvem problemas reais — da bancada ao deploy em nuvem.</p>
+                    </div>
+                    <div class="sobre-card">
+                        <h3 class="card-icon"></h3>
+                        <h4>Visão</h4>
+                        <p>Conectar hardware e software num mesmo ecossistema, com segurança, performance e rastreabilidade.</p>
+                    </div>
+                    <div class="sobre-card">
+                        <h3 class="card-icon"></h3>
+                        <h4>Valores</h4>
+                        <p>Normas ABNT/NBR/ISO, rigor de laboratório, criptografia E2EE e compromisso com cada projeto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="20">0</span>
+                    <span class="stat-label">Anos de Experiência</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="9">0</span>
+                    <span class="stat-label">Projetos Cloud em Produção</span>
+                </div>
+                
+                <div class="stat-item">
+                    <span class="stat-number" data-target="100">0</span>
+                    <span class="stat-label">% de Dedicação</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formação -->
+    <section class="section formacao" id="formacao">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">TRAJETÓRIA ACADÊMICA</span>
+                <h2 class="section-title">Formação & <span class="accent">Cursos</span></h2>
+            </div>
+            <div class="formacao-grid">
+                <div class="formacao-col">
+                    <h3 class="formacao-col-title">Escolaridade</h3>
+                    <div class="formacao-item">
+                        <div class="formacao-marker">🎓</div>
+                        <div>
+                            <h4>Técnico em Mecatrônica</h4>
+                            <p class="formacao-inst">Escola Politécnica de Minas Gerais — POLIMIG</p>
+                            <p class="formacao-period">Concluído em 10/2011</p>
+                        </div>
+                    </div>
+                    <div class="formacao-item">
+                        <div class="formacao-marker">📚</div>
+                        <div>
+                            <h4>Engenharia Eletrônica e Telecomunicações</h4>
+                            <p class="formacao-inst">Universidade Católica de Minas Gerais — PUCMinas</p>
+                            <p class="formacao-period">6º período (não concluído) — ênfase em telecom</p>
+                        </div>
+                    </div>
+                    <div class="formacao-item">
+                        <div class="formacao-marker">🌐</div>
+                        <div>
+                            <h4>Inglês — Nível Intermediário</h4>
+                            <p class="formacao-inst">Leitura e escrita técnica</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="formacao-col">
+                    <h3 class="formacao-col-title">Cursos & Especializações</h3>
+                    <ul class="formacao-list">
+                        <li><strong>Microcontroladores e Sistemas Dedicados</strong> — PUCMinas (2008)</li>
+                        <li><strong>VHDL</strong> — PUCMinas (2008)</li>
+                        <li><strong>PIC Programação em C</strong> — Microgenios (2010)</li>
+                        <li><strong>Interface Gráfica com Visual C# .NET</strong> (Sistemas Supervisórios) — Microgenios (2011)</li>
+                        <li><strong>Mecânico de Motores Diesel</strong> — SENAI CA (2013)</li>
+                        <li><strong>Programador de Sistemas (Java)</strong> — SENAI CETEL (2014)</li>
+                        <li><strong>Virtual Road Show Kinetis K (ARM Cortex-M4)</strong> — Microgenios (2015)</li>
+                        <li><strong>Projetos USB HID com PIC18F4550 e Visual Studio C#</strong> — Microgenios (2015)</li>
+                        <li><strong>Formação Internet das Coisas (IoT)</strong> — Microgenios (2016)</li>
+                        <li><strong>Gerenciamento de Projetos Industriais</strong> — CREA-MG / IETEC (2015)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="section servicos" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">COMPETÊNCIAS TÉCNICAS</span>
+                <h2 class="section-title">Hardware, Firmware & <span class="accent">Cloud</span></h2>
+            </div>
+            <div class="servicos-grid">
+                <div class="servico-card servico-card-wide">
+                    <div class="servico-icon">🔌</div>
+                    <h3 class="servico-title">1. Hardware, Eletrônica & Manufatura</h3>
+                    <p class="servico-desc">Projetos de placas em CAD (Altium, KiCad, EAGLE) · Soldas PTH e SMD · CI's Espressif ESP32, STM32/ARM, PIC/AVR · Prototipagem 3D de cases · TinyML e Edge Impulse · DSP, FFT e filtros de sinais · Criptografia TLS/SSL, AES (CBC, CFB ou GCM), ECC e Secure Boot/NVS.</p>
+                    <div class="servico-tags">
+                        <span>Altium</span><span>KiCad</span><span>PIC</span><span>ESP32</span><span>STM32</span><span>TinyML</span><span>DSP</span><span>Secure Boot</span>
+                    </div>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">📡</div>
+                    <h3 class="servico-title">2. Conectividade & Geolocalização</h3>
+                    <p class="servico-desc">Módulos GPS, GNSS e RTK de posicionamento · Redes de longo alcance 4G/LTE-M/NB-IoT, LoRa e LoRaWAN · Redes locais e malha Wi-Fi, BLE, Matter e Zigbee.</p>
+                    <div class="servico-tags">
+                        <span>GPS/GNSS</span><span>4G/LTE</span><span>NB-IoT</span><span>LoRa</span><span>LoRaWAN</span><span>Mesh</span><span>BLE</span><span>Matter</span><span>Zigbee</span>
+                    </div>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">⚙️</div>
+                    <h3 class="servico-title">3. Firmware, Sistemas & Segurança</h3>
+                    <p class="servico-desc">Linguagens de baixo nível C (ANSI), C++ e Assembly · Sistemas Linux, Windows e FreeRTOS · GUI para displays embarcados com LVGL · Cibersegurança com AES, RSA, TLS/SSL e boot seguro.</p>
+                    <div class="servico-tags">
+                        <span>C/C++</span><span>Assembly</span><span>FreeRTOS</span><span>TLS/SSL</span><span>AES/RSA</span>
+                    </div>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">☁️</div>
+                    <h3 class="servico-title">4. Software Full-Stack & Nuvem</h3>
+                    <p class="servico-desc">Backend Node.js e C# (.NET) · Sockets TCP/IP brutos, WebSockets e MQTT · Frontend Next.js, React, JavaScript ES6+, HTML5, CSS3 · Bancos NoSQL, SQL e séries temporais.</p>
+                    <div class="servico-tags">
+                        <span>Node.js</span><span>.NET</span><span>MQTT</span><span>WebSockets</span><span>Next.js</span><span>React</span><span>SQL/NoSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">PROJETOS</span>
+                <h2 class="section-title">Meus <span class="accent">Trabalhos</span></h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-img" style="background: linear-gradient(135deg, #edc200 0%, #a98a00 100%);">
+                        <span>SMS Smart</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sistema de Monitoramento de Saúde Inteligente</h3>
+                        <p>Painel inteligente para gestão de alertas, monitoramento e disparo de comandos/notificações para hardware remoto.</p>
+                        <div class="portfolio-tags">
+                            <span>IoT</span><span>Dashboard</span><span>Notificações</span>
+                        </div>
+                        <a href="https://smssmart.netlify.app" target="_blank" rel="noopener" class="servico-link">Acessar →</a>
+                        <a href="fotos/smssmart/index.html" target="_blank" rel="noopener" class="servico-link">Fotos →</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-img" style="background: linear-gradient(135deg, #9476EC 0%, #704CDB 100%);">
+                        <span>Colletta Energia</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sistema de Monitoramento de Energia</h3>
+                        <p>Plataforma de telemetria energética com gráficos de consumo e demanda em tempo real integrados ao ecossistema IoT.</p>
+                        <div class="portfolio-tags">
+                            
+                            <span>Telemetria</span><span>IoT</span><span>Real-time</span>
+                            
+                        </div>
+                        <a href="https://collettaenergia.netlify.app" target="_blank" rel="noopener" class="servico-link">Acessar →</a>
+                        <a href="fotos/CollettaSellettivaiiot billaiiot energia/index.html" target="_blank" rel="noopener" class="servico-link">Fotos →</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-img" style="background: linear-gradient(135deg, #edc200 0%, #a98a00 100%);">
+                        <span>Colletta GPS</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sistema de Monitoramento de Rastreamento</h3>
+                        <p>Servidor e interface para rastreamento de ativos geolocalizados via hardware GPS/GNSS com transmissão por redes 4G.</p>
+                        <div class="portfolio-tags">
+                            <span>GPS/GNSS</span><span>4G</span><span>Tracking</span>
+                        </div>
+                        <a href="https://collettagps.onrender.com" target="_blank" rel="noopener" class="servico-link">Acessar →</a>
+                        <a href="fotos/CollettaSelletiva iio&T GPS/index.html" target="_blank" rel="noopener" class="servico-link">Fotos →</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-img" style="background: linear-gradient(135deg, #9476EC 0%, #704CDB 100%);">
+                        <span>Colletta MQTT</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>MQTT Integration</h3>
+                        <p>Protocolo de mensageria leve para dispositivos IoT, permitindo uma comunicação eficiente entre sensores e servidores com consumo mínimo de largura de banda e energia.</p>
+                        <div class="portfolio-tags">
+                            <span>MQTT</span><span>IoT</span><span>Protocolo</span><span>Comunicação</span>
+                        </div>
+                        <a href="https://collettamqtt.onrender.com" target="_blank" rel="noopener" class="servico-link">Acessar →</a>
+                        <a href="fotos/mqtt/index.html" target="_blank" rel="noopener" class="servico-link">Fotos →</a>
+                        
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-img" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);">
+                        <span>Colletta DATA</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sistema de Monitoramento de dados e câmeras</h3>
+                        <p>Dashboard inteligente para monitoramento de sensores ambientais com visualização em tempo real e alertas de condições críticas.</p>
+                        <div class="portfolio-tags">
+                            <span>IoT</span><span>Sensor</span><span>Tempo Real</span>
+                        </div>
+                        <a href="https://nomadgeek-sensor-dashboard.onrender.com/client" target="_blank" rel="noopener" class="servico-link">Acessar →</a>
+                        <a href="fotos/colletta data/index.html" target="_blank" rel="noopener" class="servico-link">Fotos →</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-img" style="background: linear-gradient(135deg, #0078d4 0%, #005a9c 100%);">
+                        <span>Azure Portal</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Azure Portal</h3>
+                        <p>Painel centralizado para gerenciar todos os serviços e recursos Azure, criar grupos de definição, monitorar saúde e configurar políticas de segurança e governança.</p>
+                        <div class="portfolio-tags">
+                            <span>Cloud</span><span>Azure</span><span>Portal</span><span>Gerenciamento</span>
+                        </div>
+                        <a href="https://portal.azure.com" target="_blank" rel="noopener" class="servico-link"></a>
+                        <a href="fotos/portal azure/index.html" target="_blank" rel="noopener" class="servico-link">Fotos →</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-img" style="background: linear-gradient(135deg, #059669 0%, #02844e 100%);">
+                        <span>ThingsBoard</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>ThingsBoard IoT Platform</h3>
+                        <p>Plataforma de código aberto para monitoramento, gerenciamento e visualização de dados IoT em tempo real com dashboards customizáveis e integração de dispositivos.</p>
+                        <div class="portfolio-tags">
+                            <span>IoT</span><span>Dashboard</span><span>MQTT</span><span>CoAP</span>
+                        </div>
+                        <a href="https://thingsboard.io" target="_blank" rel="noopener" class="servico-link">Acessar →</a>
+                        <a href="fotos/thingsboard/index.html" target="_blank" rel="noopener" class="servico-link">Fotos →</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-img" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
+                        <span>Colletta Tempo</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sistema de Telemetria de Tempo Real</h3>
+                        <p>Monitoramento e coleta de dados temporizados com precisão para dispositivos IoT, incluindo timestamps, intervalos de amostragem e histórico de medições para análise de padrões.</p>
+                    <div class="portfolio-tags">
+                            <span>IoT</span><span>Telemetria</span><span>Tempo Real</span><span>Monitoramento</span>
+                        </div>
+                        
+                        <a href="fotos/colletta-iiot-dashboard/index.html" target="_blank" rel="noopener" class="servico-link">Fotos →</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-img" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
+                        <span>Colletta ODB2</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sistema de Monitoramento de Falhas e Rastreamento</h3>
+                        <p>Projeto de interface para leitura e monitoramento de dados de diagnóstico de veículos via protocolo OBD2.</p>
+                        <div class="portfolio-tags">
+                            <span>OBD2</span><span>Diagnóstico</span><span>Automotivo</span>
+                        </div>
+                        <a href="https://collettaodb2.netlify.app" target="_blank" rel="noopener" class="servico-link">Acessar →</a>
+                        <a href="fotos/projeto-odb2/index.html" target="_blank" rel="noopener" class="servico-link">Fotos →</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-img" style="background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);">
+                        <span>Desenvolvimento de Placas</span>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Placas de Circuito Impresso</h3>
+                        <p>Desenvolvimento e desenho de placas de circuito impresso para sistemas embarcados e IoT.</p>
+                        <div class="portfolio-tags">
+                            <span>PCB</span><span>Eletrônica</span><span>Hardware</span>
+                        </div>
+                        
+                        <a href="fotos/placas/index.html" target="_blank" rel="noopener" class="servico-link">Fotos →</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="section contato" id="contato">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FALE COMIGO</span>
+                <h2 class="section-title">Vamos <span class="accent">Conversar</span></h2>
+            </div>
+            <div class="contato-grid">
+                <div class="contato-info">
+                    <div class="contato-item">
+                        <span class="contato-icon">📧</span>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:rodrigoscarneirojob@gmail.com">rodrigoscarneirojob@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contato-item">
+                        <span class="contato-icon">📱</span>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/5504891448235" target="_blank" rel="noopener">(48) 99144-8235</a>
+                        </div>
+                    </div>
+                    <div class="contato-item">
+                        <span class="contato-icon">📍</span>
+                        <div>
+                            <h4>Localização</h4>
+                            <p>Belo Horizonte, MG — Brasil</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contato-form" id="contatoForm" action="https://formsubmit.co/rodrigoscarneirojob@gmail.com" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Seu email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Assunto">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">ENVIAR MENSAGEM</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-text">RODRIGO<span class="accent">CARNEIRO</span></span>
+                    </a>
+                    <p>Engenharia Embarcada & IoT — da placa à nuvem.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/rodrigo-carneiro-b8105b269/" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="https://github.com/bilarodrigo" aria-label="GitHub">GitHub</a>
+                        
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#formacao">Formação</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Competências</h4>
+                    <ul>
+                        <li><a href="#servicos">Hardware & Eletrônica</a></li>
+                        <li><a href="#servicos">Conectividade & GPS</a></li>
+                        <li><a href="#servicos">Firmware & Segurança</a></li>
+                        <li><a href="#servicos">Full-Stack & Cloud</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Rodrigo Santos Carneiro. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

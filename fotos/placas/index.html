@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placas - Galeria de Fotos</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { height: 100%; }
+        body { 
+            min-height: 100%; 
+            background: #0a0a0f; 
+            color: #e0e0e0; 
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: flex-start;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        h1 { 
+            width: 100%; 
+            text-align: center; 
+            padding: 20px 10px; 
+            font-size: 1.5rem; 
+            font-weight: 300; 
+            letter-spacing: 4px;
+            color: #0fdfcf;
+            border-bottom: 1px solid #333;
+            margin-bottom: 20px;
+        }
+        .gallery { 
+            width: 100%; 
+            max-width: 1600px; 
+            padding: 0 20px;
+            overflow-y: auto;
+            max-height: 100vh;
+        }
+        .grid-container { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 20px; 
+            width: 100%; 
+        }
+        .grid-item { 
+            background: #1a1a24; 
+            border-radius: 10px; 
+            overflow: hidden;
+            position: relative;
+        }
+        .grid-item img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .grid-item:hover img { transform: scale(1.08); }
+        .grid-item figcaption { 
+            position: absolute; 
+            bottom: 0; 
+            left: 0; 
+            width: 100%; 
+            padding: 20px; 
+            background: rgba(0,0,0,0.7); 
+            color: #fff; 
+            font-size: 0.95rem;
+            font-weight: 300;
+        }
+        .tag { 
+            display: inline-block; 
+            background: #dc2626; 
+            color: #fff; 
+            padding: 5px 12px; 
+            border-radius: 4px; 
+            font-size: 0.85rem; 
+            font-weight: bold; 
+            margin-right: 8px; 
+            margin-bottom: 8px;
+        }
+        .back-link { 
+            margin: 40px 0 0; 
+            padding: 12px 24px; 
+            background: #0fdfcf; 
+            color: #0a0a10; 
+            text-decoration: none; 
+            border-radius: 4px; 
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+        .back-link:hover { background: #0ccbba; }
+        @media (max-width: 768px) {
+            h1 { font-size: 1.2rem; padding: 10px; }
+            .grid-container { grid-template-columns: 1fr; gap: 10px; }
+            .grid-item { aspect-ratio: 3/2; }
+            .grid-item figcaption { font-size: 0.7rem; padding: 10px; }
+        }
+        @media (max-width: 480px) {
+            .grid-container { grid-template-columns: 1fr; gap: 5px; }
+            .grid-item { aspect-ratio: 4/3; }
+            .grid-item figcaption { font-size: 0.6rem; padding: 5px; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Placas - Galeria de Fotos</h1>
+    
+    <div class="gallery">
+        <div class="grid-container">
+            <!-- automação residencial 4 canais front -->
+            <div class="grid-item">
+                <img src="automação residencial 4 canais front.png" alt="Automação residencial 4 canais front">
+                <figcaption>
+                    <span class="tag">PCB</span>
+                    Automação residencial 4 canais - frente
+                </figcaption>
+            </div>
+            
+            <!-- automação residencial 4 canais back -->
+            <div class="grid-item">
+                <img src="automação residencial 4 canais back.png" alt="Automação residencial 4 canais back">
+                <figcaption>
+                    <span class="tag">PCB</span>
+                    Automação residencial 4 canais - verso
+                </figcaption>
+            </div>
+            
+            <!-- esp32 gps front -->
+            <div class="grid-item">
+                <img src="esp32 gps front.png" alt="ESP32 GPS front">
+                <figcaption>
+                    <span class="tag">ESP32</span>
+                    ESP32 GPS - frente
+                </figcaption>
+            </div>
+            
+            <!-- esp32 gps back -->
+            <div class="grid-item">
+                <img src="esp32 gps back.png" alt="ESP32 GPS back">
+                <figcaption>
+                    <span class="tag">ESP32</span>
+                    ESP32 GPS - verso
+                </figcaption>
+            </div>
+            
+            <!-- esp32-c3 front -->
+            <div class="grid-item">
+                <img src="esp32-c3 front.png" alt="ESP32-C3 front">
+                <figcaption>
+                    <span class="tag">ESP32</span>
+                    ESP32-C3 - frente
+                </figcaption>
+            </div>
+            
+            <!-- esp32-c3 back -->
+            <div class="grid-item">
+                <img src="esp32-c3 back.png" alt="ESP32-C3 back">
+                <figcaption>
+                    <span class="tag">ESP32</span>
+                    ESP32-C3 - verso
+                </figcaption>
+            </div>
+            
+            <!-- esp32-c6-mini front -->
+            <div class="grid-item">
+                <img src="esp32-c6-mini front.png" alt="ESP32-C6-mini front">
+                <figcaption>
+                    <span class="tag">ESP32</span>
+                    ESP32-C6-Mini - frente
+                </figcaption>
+            </div>
+            
+            <!-- esp32-c6-mini back -->
+            <div class="grid-item">
+                <img src="esp32-c6-mini back.png" alt="ESP32-C6-mini back">
+                <figcaption>
+                    <span class="tag">ESP32</span>
+                    ESP32-C6-Mini - verso
+                </figcaption>
+            </div>
+            
+            <!-- esp32-odb2 front -->
+            <div class="grid-item">
+                <img src="esp32-odb2 front.png" alt="ESP32 OBD2 front">
+                <figcaption>
+                    <span class="tag">ESP32</span>
+                    ESP32 OBD2 - frente
+                </figcaption>
+            </div>
+            
+            <!-- esp32-odb2 back -->
+            <div class="grid-item">
+                <img src="esp32-odb2 back.png" alt="ESP32 OBD2 back">
+                <figcaption>
+                    <span class="tag">ESP32</span>
+                    ESP32 OBD2 - verso
+                </figcaption>
+            </div>
+            
+            <!-- esp32-odb2 pcb -->
+            <div class="grid-item">
+                <img src="esp32-odb2 pcb.png" alt="ESP32 OBD2 PCB">
+                <figcaption>
+                    <span class="tag">ESP32</span>
+                    ESP32 OBD2 - PCB
+                </figcaption>
+            </div>
+            
+            <!-- esp32-s3 front -->
+            <div class="grid-item">
+                <img src="esp32-s3 front.png" alt="ESP32-S3 front">
+                <figcaption>
+                    <span class="tag">ESP32</span>
+                    ESP32-S3 - frente
+                </figcaption>
+            </div>
+            
+            <!-- esp32-s3 back -->
+            <div class="grid-item">
+                <img src="esp32-s3 back.png" alt="ESP32-S3 back">
+                <figcaption>
+                    <span class="tag">ESP32</span>
+                    ESP32-S3 - verso
+                </figcaption>
+            </div>
+            
+            <!-- lvgl -->
+            <div class="grid-item">
+                <img src="lvgl.png" alt="LVGL">
+                <figcaption>
+                    <span class="tag">Display</span>
+                    LVGL Graphics
+                </figcaption>
+            </div>
+            
+            <!-- medidor de energia front -->
+            <div class="grid-item">
+                <img src="medidor de energia front.png" alt="Medidor de energia front">
+                <figcaption>
+                    <span class="tag">Eletrônica</span>
+                    Medidor de energia - frente
+                </figcaption>
+            </div>
+            
+            <!-- medidor de energia back -->
+            <div class="grid-item">
+                <img src="medidor de energia back.png" alt="Medidor de energia back">
+                <figcaption>
+                    <span class="tag">Eletrônica</span>
+                    Medidor de energia - verso
+                </figcaption>
+            </div>
+            
+            <!-- medidor de energia pcb -->
+            <div class="grid-item">
+                <img src="medidor de energia pcb.png" alt="Medidor de energia PCB">
+                <figcaption>
+                    <span class="tag">Eletrônica</span>
+                    Medidor de energia - PCB
+                </figcaption>
+            </div>
+            
+            <!-- stm32-gps front -->
+            <div class="grid-item">
+                <img src="stm32-gps front.png" alt="STM32 GPS front">
+                <figcaption>
+                    <span class="tag">STM32</span>
+                    STM32 GPS - frente
+                </figcaption>
+            </div>
+            
+            <!-- stm32-gps back -->
+            <div class="grid-item">
+                <img src="stm32-gps back.png" alt="STM32 GPS back">
+                <figcaption>
+                    <span class="tag">STM32</span>
+                    STM32 GPS - verso
+                </figcaption>
+            </div>
+        </div>
+    </div>
+    
+    <a href="../../index.html" class="back-link">Voltar ao Portfólio</a>
+</body>
+</html>

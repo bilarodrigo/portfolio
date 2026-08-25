@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQTT - Galeria de Fotos</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { height: 100%; }
+        body { 
+            min-height: 100%; 
+            background: #0a0a0f; 
+            color: #e0e0e0; 
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: flex-start;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        h1 { 
+            width: 100%; 
+            text-align: center; 
+            padding: 20px 10px; 
+            font-size: 1.5rem; 
+            font-weight: 300; 
+            letter-spacing: 4px;
+            color: #0fdfcf;
+            border-bottom: 1px solid #333;
+            margin-bottom: 20px;
+        }
+        .gallery { 
+            width: 100%; 
+            max-width: 1600px; 
+            padding: 0 20px;
+            overflow-y: auto;
+            max-height: 100vh;
+        }
+        .grid-container { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 30px; 
+            width: 100%; 
+        }
+        .grid-item { 
+            background: #1a1a24; 
+            border-radius: 10px; 
+            overflow: hidden;
+            aspect-ratio: 16/9;
+            position: relative;
+        }
+        .grid-item img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .grid-item:hover img { transform: scale(1.08); }
+        .grid-item figcaption { 
+            position: absolute; 
+            bottom: 0; 
+            left: 0; 
+            width: 100%; 
+            padding: 20px; 
+            background: rgba(0,0,0,0.7); 
+            color: #fff; 
+            font-size: 0.95rem;
+            font-weight: 300;
+        }
+        .tag { 
+            display: inline-block; 
+            background: #0fdfcf; 
+            color: #0a0a10; 
+            padding: 5px 12px; 
+            border-radius: 4px; 
+            font-size: 0.85rem; 
+            font-weight: bold; 
+            margin-right: 8px; 
+            margin-bottom: 8px;
+        }
+        .back-link { 
+            margin: 40px 0 0; 
+            padding: 12px 24px; 
+            background: #0fdfcf; 
+            color: #0a0a10; 
+            text-decoration: none; 
+            border-radius: 4px; 
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+        .back-link:hover { background: #0ccbba; }
+        @media (max-width: 480px) {
+            h1 { font-size: 1.2rem; padding: 10px; }
+            .grid-container { grid-template-columns: 1fr; gap: 10px; }
+            .grid-item { aspect-ratio: 4/3; }
+            .grid-item figcaption { font-size: 0.7rem; padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <h1>MQTT - Galeria de Fotos</h1>
+    
+    <div class="gallery">
+        <div class="grid-container">
+            <!-- Card 1: Página 1 claro -->
+            <div class="grid-item">
+                <img src="pagina 1 claro.png" alt="MQTT Página 1 claro">
+                <figcaption>
+                    <span class="tag">Página 1</span>
+                    Tela clara
+                </figcaption>
+            </div>
+            
+            <!-- Card 2: Página 2 dark -->
+            <div class="grid-item">
+                <img src="pagina 2 dark.png" alt="MQTT Página 2 dark">
+                <figcaption>
+                    <span class="tag">Página 2</span>
+                    Tema dark
+                </figcaption>
+            </div>
+            
+            <!-- Card 3: Página 3 -->
+            <div class="grid-item">
+                <img src="pagina 3.png" alt="MQTT Página 3">
+                <figcaption>
+                    <span class="tag">Página 3</span>
+                    Configurações
+                </figcaption>
+            </div>
+            
+            <!-- Card 4: Página 4 -->
+            <div class="grid-item">
+                <img src="pagina 4.png" alt="MQTT Página 4">
+                <figcaption>
+                    <span class="tag">Página 4</span>
+                    Estatísticas
+                </figcaption>
+            </div>
+        </div>
+    </div>
+    
+    <a href="../../index.html" class="back-link">Voltar ao Portfólio</a>
+</body>
+</html>
