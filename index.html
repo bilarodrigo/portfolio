@@ -402,7 +402,9 @@
                         </div>
                     </div>
                 </div>
-                <form class="contato-form" id="contatoForm" action="https://formsubmit.co/rodrigoscarneirojob@gmail.com" method="POST">
+                <form class="contato-form" id="contatoForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="e94ccc3c-9c83-4bd6-af2a-aabfe30c2ae8">
+                    <input type="checkbox" name="botcheck" style="display: none;">
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Seu nome" required>
                     </div>
@@ -416,6 +418,7 @@
                         <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">ENVIAR MENSAGEM</button>
+                    <p class="form-status" id="formStatus" aria-live="polite" hidden></p>
                 </form>
             </div>
         </div>

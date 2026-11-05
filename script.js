@@ -121,15 +121,47 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Form submit
+// Form submit — Web3Forms (https://web3forms.com)
 const form = document.getElementById('contatoForm');
-form.addEventListener('submit', (e) => {
+const formStatus = document.getElementById('formStatus');
+
+form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const btn = form.querySelector('button');
     const originalText = btn.textContent;
     btn.textContent = 'ENVIANDO...';
     btn.disabled = true;
-    form.submit();
+    formStatus.hidden = true;
+
+    try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                Accept: 'application/json'
+            },
+            body: JSON.stringify(Object.fromEntries(new FormData(form)))
+        });
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+            form.reset();
+            formStatus.textContent = '✅ Mensagem enviada com sucesso! Responderei em breve.';
+            formStatus.classList.add('success');
+            formStatus.classList.remove('error');
+            formStatus.hidden = false;
+        } else {
+            throw new Error(data.message || 'Falha ao enviar');
+        }
+    } catch (err) {
+        formStatus.textContent = '❌ Erro ao enviar. Se persistir, me chame direto por WhatsApp ou e-mail: rodrigoscarneirojob@gmail.com';
+        formStatus.classList.add('error');
+        formStatus.classList.remove('success');
+        formStatus.hidden = false;
+    } finally {
+        btn.textContent = originalText;
+        btn.disabled = false;
+    }
 });
 
 // Ano atual no footer
